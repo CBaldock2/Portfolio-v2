@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import myPicture from './Assets/imgs/Christopher.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className='header'>
+        <h1>Christopher Baldock</h1>
+        <nav className='nav'>
+          <ul>
+            <li>About</li>
+            <li>Work</li>
+            <li>Contact</li>
+            <li>Resume</li>
+          </ul>
+        </nav>
       </header>
+
+      <section className='aboutSection'>
+        <img className='profilePic' src={myPicture} alt='me' />
+        <div className='aboutWording'>
+          <h2 className='about'>
+            About
+          </h2>
+          <p className='shortAboutMe'>
+            et egestas quis ipsum suspendisse ultrices gravida
+          </p>
+          <p className='longAboutMe'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <span className='highlights'>do eiusmod tempor incididunt ut labore</span> et dolore magna aliqua.
+            <br/>
+            <br/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span className='highlights'>eiusmod</span> tempor <span className='highlights'>incididunt</span> ut labore et dolore magna aliqua. Lacus sed turpis <span className='highlights'>tincidunt id aliquet</span> risus. Dictumst vestibulum rhoncus est pellentesque elit.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
