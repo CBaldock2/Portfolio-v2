@@ -1,0 +1,40 @@
+.projectList {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    color: #01C38D;
+    text-shadow: 0px 0px 10px #01C38D;
+    font-family: IBM Plex Serif;
+    font-size: 1.75vw;
+    letter-spacing: .65vw;
+}
+
+.projectCard {
+    position: relative;
+    margin: 5% 1% 0 1%;
+    transition: opacity 0.3 ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 2%;
+}
+
+.projectCard:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    border-radius: 2% 2% 0 0;
+    height: 24vw;
+}
