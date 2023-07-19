@@ -44,11 +44,10 @@ li {
 }
 
 .aboutWording {
-  margin-top: 7%;
+  margin-top: 8%;
 }
 
-.about {
-  margin: 0 0 3% 6%;
+.about, .work {
   color: #01C38D;
   text-shadow: 0px 0px 10px #01C38D;
   font-family: IBM Plex Serif;
@@ -56,19 +55,23 @@ li {
   letter-spacing: .65vw;
 }
 
-.shortAboutMe {
-  margin: 0 25% 1% 0;
+.about {
+  margin: 0 0 2% 6%;
+}
+
+.shortAboutMe, .shortWork {
   color: #FFF;
   font-family: IBM Plex Serif;
   font-size: 3vw;
   letter-spacing: .60vw;
 }
 
+.shortAboutMe {
+  margin: 0 25% 1% 0;
+}
+
 .longAboutMe {
   margin: 1% 15% 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: #696E79;
   font-family: IBM Plex Serif;
   font-size: 1.3vw;
@@ -77,7 +80,21 @@ li {
 
 .highlights {
   color: #01C38D;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+}
+
+.workSection {
+
+}
+
+.workwording {
+
+}
+
+.work {
+  margin: 10% 0 0 23%;
+}
+
+.shortWork {
+  margin: 2% 50% 0 5%;
+  text-align: center;
 }
