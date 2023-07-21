@@ -1,0 +1,87 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-family: IBM Plex Serif;
+    font-size: 130%;
+    letter-spacing: .4vw;
+}
+
+.individualSkill {
+    padding: 0 2% 1% 2%;
+}
+
+.individualSkill:hover {
+    transform: scale(1.3);
+    rotate: 15deg;
+    transition: ease .2s;
+}
+
+.individualSkill:hover p {
+    color: #fff;
+    text-shadow: 0 0 2vw #01C38D
+}
+
+.icon {
+    font-size: 8vw;
+}
+
+p {
+    margin-top: 0;
+    color: #696E79;
+}
+
+.html .icon {
+    color: #e34c26;
+}
+
+.css .icon {
+    color: #264de4;
+}
+
+.js .icon {
+    color: #f0db4f;
+}
+
+.react .icon {
+    color: #61dbfb;
+}
+
+.bootstrap .icon {
+    color: #563d7c;
+}
+
+.database .icon {
+    color: #00758f;
+}
+
+.dev {}
+
+.figma .icon {
+    color: #b4c4f4;
+}
+
+.github .icon {
+    color: #333;
+}
+
+.git .icon {
+    color: #4078c0;
+}
+
+.node .icon {
+    color: #215732;
+}
+
+.npm .icon {
+    color: #CB3837;
+}
+
+.restfulApis .icon {
+    color: #9c00a9;
+}
+
+.chartJs {
+    color: #f2786a;
+}

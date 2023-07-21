@@ -1,6 +1,8 @@
 .projectList {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 h3 {
@@ -15,6 +17,9 @@ h3 {
     position: relative;
     margin: 5% 1% 0 1%;
     transition: opacity 0.3 ease;
+    border-radius: 2%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .overlay {
@@ -25,9 +30,9 @@ h3 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: .5s ease;
     pointer-events: none;
-    border-radius: 2%;
+    border-radius: 2% 2% 0 0;
 }
 
 .projectCard:hover .overlay {
@@ -35,6 +40,63 @@ h3 {
 }
 
 .image {
-    border-radius: 2% 2% 0 0;
     height: 24vw;
+    border-radius: 2% 2% 0 0;
+}
+
+.cardBody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    color: #FFF;
+    font-family: IBM Plex Serif;
+    line-height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.projectCard:hover .cardBody {
+    opacity: 1;
+    visibility: visible;
+    transition: ease 1s;
+}
+
+.projectDescription {
+    letter-spacing: .1vw;
+}
+
+button {
+    border: none;
+    border-radius: 5%;
+    color: #191e29;
+    background-color: #01C38D;
+    transition: all 1000ms;
+    overflow: hidden;
+}
+
+button:hover {
+    color: #01C38D;
+    transform: scale(1.1);
+    outline: 2px solid #01C38D;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #191e29;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: .5s;
+}
+
+button:hover::before {
+    width: 250%;
 }
