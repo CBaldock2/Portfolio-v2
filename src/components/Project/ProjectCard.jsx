@@ -3,19 +3,17 @@ import './Project.css';
 
 function ProjectCard(props) {
     return (
-        <div className="projectCard">
+        <a href={props.deployed} className="projectCard">
             <div className="overlay"></div>
             <img className="image" src={props.imgPath} alt="project Chris Baldock contributed to"></img>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
-            <div>
-                <button href={props.deployed}>Access</button>
-                <button href={props.github}>GitHub</button>
+            <div className="cardBody">
+                <h3>{props.title}</h3>
+                <p className="projectDescription">{props.description}</p>
+                <div>
+                    {props.skills}
+                </div>
             </div>
-            <div>
-                {props.skills}
-            </div>
-        </div>
+        </a>
     )
 }
 

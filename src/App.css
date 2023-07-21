@@ -8,6 +8,8 @@
   font-family: IBM Plex Serif;
   font-style: normal;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  backdrop-filter: blur(1vw);
 }
 
 h1 {
@@ -47,7 +49,7 @@ li {
   margin-top: 8%;
 }
 
-.about, .work {
+.about, .work, .skill {
   color: #01C38D;
   text-shadow: 0px 0px 10px #01C38D;
   font-family: IBM Plex Serif;
@@ -83,11 +85,7 @@ li {
 }
 
 .workSection {
-
-}
-
-.workwording {
-
+  margin-bottom: 8%;
 }
 
 .work {
@@ -97,4 +95,23 @@ li {
 .shortWork {
   margin: 2% 50% 0 5%;
   text-align: center;
+}
+
+.skillSection {
+  margin: 0 5%;
+  border-bottom: .1vw solid #696E79;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.skill {
+  rotate: 90deg;
+  font-size: 200%;
+  letter-spacing: 2vw;
 }
