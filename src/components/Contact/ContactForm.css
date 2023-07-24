@@ -1,0 +1,98 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1vw;
+    width: 50%;
+    background-color: #191e29;
+    font-family: IBM Plex Serif;
+    letter-spacing: .3vw;
+    margin: 0 0 0 2%;
+}
+
+p {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.form input {
+    padding: 2% 5%;
+    width: 30vw;
+    height: 3vw;
+    border-radius: 2%;
+    border: .2vw solid #191E29;
+    background: #132D46;
+    box-shadow: 1vw 2vw 2vw 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 2%;
+}
+
+.form textarea {
+    padding: 2% 5%;
+    width: 30vw;
+    height: 10vw;
+    border-radius: 2%;
+    border: .2vw solid #191E29;
+    background: #132D46;
+    box-shadow: 1vw 2vw 2vw 0 rgba(0, 0, 0, 0.25);
+}
+
+.wordArea {
+margin-right: 0;
+}
+
+
+.input, .message {
+    color: #F5F5F5;
+    font-family: IBM Plex Serif;
+    letter-spacing: .3vw;
+}
+
+.input {
+    font-size: 150%;
+}
+
+.message {
+    font-size: 100%;
+}
+
+.submit {
+    margin: 0 0 2% 5.5%;
+    padding: 2%;
+    border: 0;
+    border-radius: 5%;
+    color: #191e29;
+    background-color: #01C38D;
+    transition: all 1000ms;
+    overflow: hidden;
+    align-self: flex-end;
+    color: #fff;  
+    background-color: #132D46;
+    font-size: 1.25vw;
+    font-family: IBM Plex Serif;
+    letter-spacing: .3vw;
+    cursor: pointer;  
+}
+
+.submit:hover {
+    color: #01C38D;
+    transform: scale(1.1);
+    outline: 2px solid #01C38D;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.submit::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #191e29;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: .5s;
+}
+
+.submit:hover::before {
+    width: 250%;
+}
