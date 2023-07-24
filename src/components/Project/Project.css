@@ -68,35 +68,3 @@ h3 {
     letter-spacing: .1vw;
 }
 
-button {
-    border: none;
-    border-radius: 5%;
-    color: #191e29;
-    background-color: #01C38D;
-    transition: all 1000ms;
-    overflow: hidden;
-}
-
-button:hover {
-    color: #01C38D;
-    transform: scale(1.1);
-    outline: 2px solid #01C38D;
-    box-shadow: 4px 5px 17px -4px #268391;
-}
-
-button::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #191e29;
-    transform: skewX(45deg);
-    z-index: -1;
-    transition: .5s;
-}
-
-button:hover::before {
-    width: 250%;
-}
