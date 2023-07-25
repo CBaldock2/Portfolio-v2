@@ -33,7 +33,7 @@ function App() {
               et egestas quis ipsum suspendisse ultrices gravida
             </p>
             <p className='longAboutMe'>
-             I am Chris, a <span className='highlights'>Full Stack Web Developer</span>. 
+              I am Chris, a <span className='highlights'>Full Stack Web Developer</span>.
               <br />
               <br />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span className='highlights'>eiusmod</span> tempor <span className='highlights'>incididunt</span> ut labore et dolore magna aliqua. Lacus sed turpis <span className='highlights'>tincidunt id aliquet</span> risus. Dictumst vestibulum rhoncus est pellentesque elit.
@@ -45,9 +45,9 @@ function App() {
           <div className='workWording'>
             <h2 className='work'>Work</h2>
             <p className='shortWork'>Check out some of the projects I have worked on!</p>
-            <div>
-              <ProjectList />
-            </div>
+          </div>
+          <div className='projectListConatiner'>
+            <ProjectList />
           </div>
         </section>
 
@@ -85,7 +85,7 @@ function App() {
             Source Code
           </h2>
           <p className='sourceJoke'>
-            Some code joke
+            Weeks of coding can save you hours of planning.
           </p>
           <a href='https://github.com/CBaldock2/Portfolio-v2' className='sourceBtn'>Show Code</a>
         </section>
