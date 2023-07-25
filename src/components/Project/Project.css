@@ -1,8 +1,8 @@
 .projectList {
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    max-width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 2%;
 }
 
 h3 {
@@ -15,8 +15,7 @@ h3 {
 
 .projectCard {
     position: relative;
-    margin: 5% 1% 0 1%;
-    transition: opacity 0.3 ease;
+    margin: 2% 1% 0 1%;
     border-radius: 2%;
     opacity: 1;
     transition: opacity 0.3s ease;
@@ -40,7 +39,8 @@ h3 {
 }
 
 .image {
-    height: 24vw;
+    height: 20vw;
+    max-width: auto;
     border-radius: 2% 2% 0 0;
 }
 

@@ -1,62 +1,63 @@
-import React, {  } from "react";
+import React, { useState, useRef } from "react";
 import "./ContactForm.css";
-// import emailjs from "emailjs";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [message, setMessage] = useState('');
-    // const form = useRef();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    
+    const form = useRef();
 
-    // const handleNameChange = (e) => {
-    //     setName(e.target.value);
-    // };
-    // const handleEmailChange = (e) => {
-    //     setEmail(e.target.value);
-    // };
-    // const handleMessageChange = (e) => {
-    //     setMessage(e.target.value);
-    // };
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+    };
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+    const handleMessageChange = (e) => {
+        setMessage(e.target.value);
+    };
 
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    //     emailjs
-    //         .sendForm(
-    //             'service_uxohnik',
-    //             'template_5cv5f24',
-    //             form.current,
-    //             'c77soGEhYFY6vRD4D')
-    //         .then(
-    //             (result) => {
-    //                 console.log(result.text);
-    //                 setName('');
-    //                 setEmail('');
-    //                 setMessage('');
-    //             },
-    //             (error) => {
-    //                 console.log(error.text);
-    //             })
-    // }
+        emailjs
+            .sendForm(
+                'service_uxohnik',
+                'template_5cv5f24',
+                form.current,
+                'c77soGEhYFY6vRD4D')
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+                },
+                (error) => {
+                    console.log(error.text);
+                })
+    }
 
     return (
-        <form class="form">
+        <form className="form" ref={form} onSubmit={sendEmail}>
             <div>
                 <div className="wordArea">
-                <p>Name</p>
-                <input type="text" class="input" />
-            </div>
-            <div>
-                <p>Email</p>
-                <input type="text" class="input" />
-            </div>
-            <div>
-                <p>Message</p>
-                <textarea className="message"></textarea>
-            </div>
+                    <p>Name</p>
+                    <input type="text" className="input" name='name' value={name} onChange={handleNameChange} required />
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="text" className="input" name='email' value={email} onChange={handleEmailChange} required />
+                </div>
+                <div>
+                    <p>Message</p>
+                    <textarea className="message" name='message' value={message} onChange={handleMessageChange} required />
+                </div>
             </div>
 
-            <button className="submit">Submit</button>
+            <button className="submit" onClick={sendEmail}>Submit</button>
         </form>
     )
 }

@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #191e29;
+  font-family: IBM Plex Serif;
 }
 
 code {
