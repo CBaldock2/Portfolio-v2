@@ -8,9 +8,10 @@ function ProjectCard(props) {
             <img className="image" src={props.imgPath} alt="project Chris Baldock contributed to"></img>
             <div className="cardBody">
                 <h3>{props.title}</h3>
-                <p className="projectDescription">{props.description}</p>
-                <div>
-                    {props.skills}
+                <div className="projectSkillContainer">
+                    {Array.isArray(props.skills) && props.skills.map((skill) => (
+                        <div key={skill} className='projectSkill'>{skill}</div>
+                    ))}
                 </div>
             </div>
         </a>

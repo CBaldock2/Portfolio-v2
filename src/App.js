@@ -6,6 +6,7 @@ import Skill from './components/Skills/Skill';
 import ContactForm from './components/Contact/ContactForm';
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Logo from './Assets/imgs/Logo.png'
+import AboutHead from './components/AboutHead/AboutHead';
 
 function App() {
   return (
@@ -30,13 +31,12 @@ function App() {
               About
             </h2>
             <p className='shortAboutMe'>
-              et egestas quis ipsum suspendisse ultrices gravida
+              <AboutHead />
             </p>
             <p className='longAboutMe'>
-              I am Chris, a <span className='highlights'>Full Stack Web Developer</span>.
               <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span className='highlights'>eiusmod</span> tempor <span className='highlights'>incididunt</span> ut labore et dolore magna aliqua. Lacus sed turpis <span className='highlights'>tincidunt id aliquet</span> risus. Dictumst vestibulum rhoncus est pellentesque elit.
+              I enjoy solving tough problems and programming thoughtful designs.
+              My specialties are in <span className='highlights'>MySQL</span>, <span className='highlights'>React</span>, and <span className='highlights'>Frontend Development</span>. In my free time I like to listen to music, play games, and travel around the world.
             </p>
           </div>
         </section>

@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  font-family: IBM Plex Serif;
 }
 
 .header {
@@ -54,15 +55,12 @@ a {
   padding-top: 10%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .profilePic {
   margin: 5% 2% 0 10%;
   height: 40vw;
-}
-
-.aboutWording {
-  margin-top: 8%;
 }
 
 .about,
@@ -72,12 +70,12 @@ a {
 .source {
   color: #01C38D;
   text-shadow: 0px 0px 10px #01C38D;
-  font-size: 2.5vw;
+  font-size: 2vw;
   letter-spacing: .65vw;
 }
 
 .about {
-  margin: 0 0 2% 6%;
+  margin: -3% 0 5% 6%;
 }
 
 .shortAboutMe,
@@ -94,7 +92,7 @@ a {
 
 .longAboutMe {
   margin: 1% 15% 0 0;
-  color: #696E79;
+  color: #9fa2a9;
   font-size: 1.3vw;
   letter-spacing: .2vw;
 }
@@ -132,7 +130,6 @@ a {
 
 .skill {
   rotate: 90deg;
-  letter-spacing: 2vw;
 }
 
 .pageBreak {

@@ -4,7 +4,7 @@
     justify-content: space-between;
     text-align: center;
     font-family: IBM Plex Serif;
-    font-size: 90%;
+    font-size: 80%;
     letter-spacing: .4vw;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .icon {
-    font-size: 8vw;
+    font-size: 4vw;
 }
 
 p {
