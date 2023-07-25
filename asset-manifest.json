@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio-V2/static/css/main.4bc1f508.css",
+    "main.js": "/Portfolio-V2/static/js/main.97669818.js",
+    "static/js/787.bc7d429a.chunk.js": "/Portfolio-V2/static/js/787.bc7d429a.chunk.js",
+    "static/media/Christopher.jpg": "/Portfolio-V2/static/media/Christopher.403c9652ec03771b72e3.jpg",
+    "static/media/Logo.png": "/Portfolio-V2/static/media/Logo.8b073079f8d2481b44b1.png",
+    "static/media/Parking Buddy.png": "/Portfolio-V2/static/media/Parking Buddy.b84286b3ca7cee0bada4.png",
+    "static/media/Weather Dashboard.png": "/Portfolio-V2/static/media/Weather Dashboard.2b6d86dee28932b7a770.png",
+    "static/media/JOLT-logo.png": "/Portfolio-V2/static/media/JOLT-logo.78f46e7eba1f453886da.png",
+    "static/media/Mixing Pot.png": "/Portfolio-V2/static/media/Mixing Pot.89c9970ce5c2a7e5a8d3.png",
+    "index.html": "/Portfolio-V2/index.html",
+    "main.4bc1f508.css.map": "/Portfolio-V2/static/css/main.4bc1f508.css.map",
+    "main.97669818.js.map": "/Portfolio-V2/static/js/main.97669818.js.map",
+    "787.bc7d429a.chunk.js.map": "/Portfolio-V2/static/js/787.bc7d429a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bc1f508.css",
+    "static/js/main.97669818.js"
+  ]
+}
