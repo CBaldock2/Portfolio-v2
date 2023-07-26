@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-v2/static/css/main.a7ed5561.css",
-    "main.js": "/Portfolio-v2/static/js/main.0c142616.js",
+    "main.css": "/Portfolio-v2/static/css/main.b6e5a5d6.css",
+    "main.js": "/Portfolio-v2/static/js/main.6d6af1f1.js",
     "static/js/787.bc7d429a.chunk.js": "/Portfolio-v2/static/js/787.bc7d429a.chunk.js",
     "static/media/Christopher.jpg": "/Portfolio-v2/static/media/Christopher.403c9652ec03771b72e3.jpg",
     "static/media/Logo.png": "/Portfolio-v2/static/media/Logo.8b073079f8d2481b44b1.png",
@@ -10,12 +10,12 @@
     "static/media/JOLT-logo.png": "/Portfolio-v2/static/media/JOLT-logo.78f46e7eba1f453886da.png",
     "static/media/Mixing Pot.png": "/Portfolio-v2/static/media/Mixing Pot.89c9970ce5c2a7e5a8d3.png",
     "index.html": "/Portfolio-v2/index.html",
-    "main.a7ed5561.css.map": "/Portfolio-v2/static/css/main.a7ed5561.css.map",
-    "main.0c142616.js.map": "/Portfolio-v2/static/js/main.0c142616.js.map",
+    "main.b6e5a5d6.css.map": "/Portfolio-v2/static/css/main.b6e5a5d6.css.map",
+    "main.6d6af1f1.js.map": "/Portfolio-v2/static/js/main.6d6af1f1.js.map",
     "787.bc7d429a.chunk.js.map": "/Portfolio-v2/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7ed5561.css",
-    "static/js/main.0c142616.js"
+    "static/css/main.b6e5a5d6.css",
+    "static/js/main.6d6af1f1.js"
   ]
 }
