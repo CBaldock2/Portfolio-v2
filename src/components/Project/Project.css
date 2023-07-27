@@ -68,3 +68,19 @@ h3 {
     letter-spacing: .1vw;
 }
 
+.projectSkillContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-top: 30%;
+}
+
+.projectSkill {
+    margin: 1%;
+    background-color: #01C38D;
+    padding: 2%;
+    border-radius: 100%;
+    box-shadow:  0px 0px 7px #FFF;
+    letter-spacing: .2vw;
+}
