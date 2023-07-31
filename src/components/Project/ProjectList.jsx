@@ -21,21 +21,21 @@ function ProjectList() {
                         imgPath={ParkingBuddy}
                         title='Parking Buddy'
                         deployed='https://serene-cove-30368.herokuapp.com/'
-                        skills={['#React', '#Chart.js']}
+                        skills={['#MySQL', '#MVC', '#API']}
                     />
                     <ProjectCard
                         className='projectCard'
                         imgPath={MixingPot}
                         title='Mixing Pot'
                         deployed='https://three-amigos-recipes.github.io/three-amigos-recipes/'
-                        skills={['#React', '#Chart.js']}
+                        skills={['#JavaScript', '#CSS', '#HTML']}
                     />
                     <ProjectCard
                         className='projectCard'
                         imgPath={WeatherDashboard}
                         title='Weather Dashboard'
                         deployed='https://cbaldock2.github.io/Weather-Dashboard/'
-                        skills={['#React', '#Chart.js']}
+                        skills={['#JavaScript', '#CSS', '#HTML']}
                     />
             </div>
 
