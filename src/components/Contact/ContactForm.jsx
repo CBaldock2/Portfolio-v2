@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./ContactForm.css";
 import emailjs from "@emailjs/browser";
 
@@ -6,7 +6,9 @@ function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    
+    const [messageSent, setMessageSent] = useState(false);
+    const [showNotification, setShowNotification] = useState(false);
+
     const form = useRef();
 
     const handleNameChange = (e) => {
@@ -34,11 +36,27 @@ function ContactForm() {
                     setName('');
                     setEmail('');
                     setMessage('');
+                    setMessageSent(true);
                 },
                 (error) => {
                     console.log(error.text);
-                })
-    }
+                });
+    };
+
+    useEffect(() => {
+        if (messageSent) {
+            setShowNotification(true)
+
+            const timer = setTimeout(() => {
+                setShowNotification(false);
+            }, 3000);
+
+            return () => {
+                clearTimeout(timer);
+                setMessageSent(false);
+            };
+        };
+    }, [messageSent]);
 
     return (
         <form className="form" ref={form} onSubmit={sendEmail}>
@@ -58,6 +76,11 @@ function ContactForm() {
             </div>
 
             <button className="submit" onClick={sendEmail}>Submit</button>
+            {showNotification && (
+                <div className="notification">
+                    <p>Your message has been sent! 👽</p>
+                </div>
+            )}
         </form>
     )
 }
