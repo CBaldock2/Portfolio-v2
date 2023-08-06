@@ -18,7 +18,7 @@ function App() {
             <li><a href='#about'>About</a></li>
             <li><a href='#work'>Work</a></li>
             <li><a href='#contact'>Contact</a></li>
-            <li><a href='https://drive.google.com/file/d/1bAzu0LhCjo6i0lqssjuog62C50OGWadf/view?usp=drive_link'>Resume</a></li>
+            <li><a href='https://drive.google.com/file/d/1bAzu0LhCjo6i0lqssjuog62C50OGWadf/view?usp=sharing' target='_blank'>Resume</a></li>
           </ul>
         </nav>
       </header>
