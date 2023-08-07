@@ -9,12 +9,12 @@
 }
 
 .individualSkill {
-    padding: 0 1%;
+    padding: 0 2%;
 }
 
 .individualSkill:hover {
     transform: scale(1.3);
-    rotate: 15deg;
+    rotate: 16deg;
     transition: linear .3s;
 }
 
