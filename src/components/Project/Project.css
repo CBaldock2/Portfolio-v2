@@ -15,17 +15,17 @@ h3 {
 }
 
 .image {
-    height: 20vw;
+    height: 24vw;
     max-width: auto;
     border-radius: 2%;
-    box-shadow: 2px 4px 6px 5px #081018;
+    box-shadow: 2px 4px 8px 4px #081018;
 }
 
 .cardFlip {
     margin: 1vw;
     background-color: transparent;
     width: 25vw;
-    height: 20vw;
+    height: 24vw;
     perspective: 1000px;
 }
 
@@ -39,7 +39,6 @@ h3 {
 }
 
 .cardFlip:hover{
-    margin-bottom: 5%;
     transition: ease-in-out .4s;
 }
 
@@ -61,7 +60,7 @@ h3 {
     background: #132D46;
     height: fit-content;
     border-radius: 1%;
-    box-shadow: 2px 4px 6px 5px #081018;
+    box-shadow: 2px 4px 8px 4px #081018;
 }
 
 .projectSkillContainer {
@@ -69,6 +68,9 @@ h3 {
     justify-content: end;
     flex-wrap: wrap;
     align-items: end;
+    flex-direction: row;
+    width: 100%;
+    padding: 2%;
 }
 
 .projectSkill {
@@ -83,11 +85,10 @@ h3 {
 }
 
 .test {
-    margin-top: 3vw;
-    padding: 1%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-top: 4%;
 }
 
 .description {
@@ -97,10 +98,11 @@ h3 {
 }
 
 .link {
-    margin-top: 5%;
-    padding: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
     color: #696e79c2;
-    font-size: 75%;
+    font-size: 72%;
 }
 
 .link:hover {
